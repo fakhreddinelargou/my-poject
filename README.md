@@ -42,4 +42,4 @@ The following technologies were used to create this project:
 ## Setup
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/fakhreddines-world.git
+   https://github.com/fakhreddinelargou/my-poject.git
