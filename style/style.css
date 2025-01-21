@@ -1,0 +1,334 @@
+.head{
+
+    height: 10vh;
+    width: 100%;
+    display: flex;
+align-items: center;
+justify-content: end;
+padding-right: 10rem;
+}
+.head .navigation{
+   
+display: flex;
+align-items: center;
+justify-self: flex-end;
+align-self: flex-end;
+} 
+.head .navigation ol{
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+.head .navigation ol li{
+    cursor: pointer;
+}
+.head .navigation ol li a svg{
+fill:var(--color-light-grey);
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: .5rem;
+    transition: .2s;
+    padding: 1rem;
+}
+.head .navigation ol li a svg:hover{
+    background-color: var(--color-blue);
+}
+.container{
+position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+width: 100%;
+    height: 90vh;
+
+}
+.about{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about .title{
+    display: flex;
+    flex-direction: column;
+    font-weight: 200;
+    font-size: 5rem;
+    letter-spacing: .2rem;
+    margin-bottom: 2rem;
+
+}
+.about .title .bold-title{
+    font-size: 4rem ;
+    font-weight: 500;
+ letter-spacing: normal;
+}
+.about-me{
+    color: var(--color-light-grey);
+max-width: 39rem;
+line-height: 1.7;
+}
+.lang{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ 
+}
+.lang  h2{
+ margin: 0 0 2rem 2rem;
+ align-self: flex-start;
+}
+.lang .all-lang{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.lang .all-lang .langs{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    background-color: var(--color-blue);
+    padding: 1.5rem;
+    border-radius: .8rem;
+    cursor: pointer;
+    transition: .2s;
+}
+
+
+.lang .all-lang .langs:hover{
+  transform: scale(1.02);
+}
+
+.lang .all-lang .langs svg{
+    width: 4.5rem;
+    height: 4.5rem;
+    
+    border-radius: .8rem;
+ padding: 1.2rem;
+}
+.lang .all-lang .langs span{
+ color: var(--color-light-grey);
+}
+.lang .all-lang .langs span strong{
+    color: var(--neutril-white);
+}
+.svg-html{
+fill:rgb(201, 137, 17);
+background-color: antiquewhite;
+border: solid .1rem rgba(145, 100, 16, 0.92) ;
+
+}
+.svg-css{
+
+    fill:rgb(30, 209, 30);
+   background-color: rgb(200, 254, 236);
+    border: solid .1rem rgb(28, 201, 28 , .92);
+ 
+
+}
+.svg-js{
+fill:rgb(13, 80, 181);
+background-color: rgb(156, 247, 247);
+border: solid .1rem rgb(39, 121, 244) ;
+
+
+}
+
+
+
+
+/* PROJECT HTML */
+.focus{
+margin-top: 10rem;
+padding-left: 5rem;
+padding-bottom: 10rem;
+    width: 100%;
+    position: relative;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+.focus h2{
+    padding-bottom: 5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.focus h2 svg{
+    width: 2rem;
+    height: 3rem;
+    fill:var(--neutril-white);
+    cursor: pointer;
+}
+.focus .project{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+ 
+    gap: 4rem;
+
+  
+}
+.project-img{
+ position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 35rem;
+height: 25rem;
+border-radius: .8rem;
+transition: .2s;
+color: var(--neutril-white);
+}
+.project-img::after{
+    content: '';
+    position: absolute;
+    width: 35rem;
+    height: 25rem;
+    transition: .2s;
+    background-color: transparent;
+}
+.project-img:hover::after{
+    background-color: rgba(32, 26, 26, 0.342);
+
+}
+.project-img:hover{
+   background-color: rgb(21, 34, 44);
+    transform: scale(1.02);
+
+}
+ .Documentation{
+    background-image: url(/images/Documentation-Assignment-2\ .png);
+
+
+ }
+ .csv-json{
+    background-image: url(/images/csv-json.png);
+
+
+ }
+
+ /* html-css */
+ .nimble{
+    background-image: url(/images/nimble.png);
+    background-position: center;
+ }
+ .four-card{
+    background-image: url(/images/four-card.jpg);
+    background-position: center;
+ }
+ .profile{
+    background-image: url(/images/profile.jpg);
+    background-position: center;
+ }
+ .preview-card{
+    background-image: url(/images/preview-card.jpg);
+    background-position: center;
+ }
+ .stats-preview{
+        background-image: url(/images/stats-preview.jpg);
+        background-position: center;
+     }
+ .collaboration{
+    background-image: url(/images/collaboration.png);
+    background-position: center;
+ }
+ .product-list{
+    background-image: url(/images/product-list.jpg);
+    background-position: center;
+ }
+ .faq-accordion{
+    background-image: url(/images/faq-accordion.jpg);
+    background-position: center;
+ }
+ .interactive-rating{
+    background-image: url(/images/interactive-rating.jpg);
+    background-position: center;
+ }
+ .ticket{
+    background-image: url(/images/ticket.jpg);
+    background-position: center;
+ }
+ .login{
+    background-image: url(/images/login.png);
+    background-position: center;
+ }
+ .incomplete:hover::after{
+    content: 'Incomplete';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:var(--color-flow);
+    font-size: 3.5rem;
+    font-weight: 600;
+
+ }
+
+@media screen and (max-width:50rem) {
+    .container{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+       gap: 5rem;
+        height: auto;
+        width: 100%;
+      
+    }
+    .about{
+        height: 25rem;
+        width: 90vw;
+        padding-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+    }
+    .about .title{
+        font-size: 4rem;
+    }
+    .about .title .bold-title{
+        font-size: 3.5rem;
+    }
+
+    .lang .all-lang .langs{
+        width: 95vw;
+  
+    }
+    .focus h2{
+        padding-left: 2rem;
+        letter-spacing: 1.2px;
+    }
+    .lang .all-lang .langs svg{
+   width: 3.5rem;
+   height:3.5rem;
+
+    }
+    .lang .all-lang .langs span{
+font-size: 1.1rem;
+    }
+    .focus .project{
+        display: grid;
+        grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+
+     margin: auto;
+        gap: 4rem;
+    
+      
+    }
+    .head{
+      justify-content: center;
+      padding-right: 0;
+      margin-top: 2rem;
+    }
+    .navigation{
+        padding: 1rem 4rem;
+       border-radius: 5rem;
+       border: solid .1rem;
+      
+    }
+    .head .navigation ol li a svg{
+        width: 4rem;
+        height: 4rem;
+    }
+}
