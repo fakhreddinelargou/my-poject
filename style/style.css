@@ -312,7 +312,7 @@ font-size: 1.1rem;
         display: grid;
         grid-template-columns: 1fr;
       grid-template-rows: 1fr 1fr;
-      max-width: 90%;
+      max-width: 100%;
        justify-content: center;
         gap: 4rem;
     
@@ -345,7 +345,6 @@ font-size: 1.1rem;
         height: 4rem;
     }
     .focus{
-        
         padding-left: 0;
     }
     .focus h2{
