@@ -140,9 +140,8 @@ border: solid .1rem rgb(39, 121, 244) ;
 
 /* PROJECT HTML */
 .focus{
-margin-top: 10rem;
+margin-top: 5rem;
 padding-left: 5rem;
-padding-bottom: 10rem;
     width: 100%;
     position: relative;
    display: flex;
@@ -166,20 +165,21 @@ padding-bottom: 10rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+ max-width: 90%;
+    gap: 2rem;
+    padding-bottom: 5rem;
  
-    gap: 4rem;
-
-  
 }
 .project-img{
  position: relative;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 35rem;
+    width:auto;
 height: 25rem;
 border-radius: .8rem;
 transition: .2s;
 color: var(--neutril-white);
+
 }
 .project-img::after{
     content: '';
@@ -188,6 +188,7 @@ color: var(--neutril-white);
     height: 25rem;
     transition: .2s;
     background-color: transparent;
+    border-radius: .8rem;
 }
 .project-img:hover::after{
     background-color: rgba(32, 26, 26, 0.342);
@@ -311,12 +312,24 @@ font-size: 1.1rem;
         display: grid;
         grid-template-columns: 1fr;
       grid-template-rows: 1fr 1fr;
-
-     margin: auto;
+      max-width: 90%;
+       justify-content: center;
         gap: 4rem;
     
       
     }
+    .project-img{
+        position: relative;
+           background-repeat: no-repeat;
+           background-size: cover;
+           width:35rem;
+       height: 25rem;
+       justify-self: center;
+       border-radius: .8rem;
+       transition: .2s;
+       color: var(--neutril-white);
+       
+       }
     .head{
       justify-content: center;
       padding-right: 0;
@@ -326,7 +339,6 @@ font-size: 1.1rem;
         padding: 1rem 4rem;
        border-radius: 5rem;
        border: solid .1rem;
-      
     }
     .head .navigation ol li a svg{
         width: 4rem;
@@ -339,4 +351,29 @@ font-size: 1.1rem;
     .focus h2{
         margin-left: 1.5rem;
     }
+    .Updated{
+        width: 35rem;
+        justify-self:center ;
+    }
+}
+
+.Updated{
+    position: relative;
+    overflow: hidden;
+    border-radius: .8rem;
+}
+.Updated::before{
+    content: 'Updated';
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+   
+    position: absolute;
+    z-index: 2;
+    background-color: rgb(17, 174, 17);
+    padding: .6rem 4rem;
+    right: -4rem;
+    top: 1.5rem;
+    transform: rotate(45deg);
+
 }
