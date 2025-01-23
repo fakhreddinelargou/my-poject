@@ -255,6 +255,10 @@ color: var(--neutril-white);
     background-image: url(/images/login.png);
     background-position: center;
  }
+ .clipbo{
+    background-image: url(/images/clipbo.jpg);
+    background-position: center;
+ }
  .incomplete:hover::after{
     content: 'Incomplete';
     display: flex;
@@ -356,7 +360,7 @@ font-size: 1.1rem;
     }
 }
 
-.Updated{
+.Updated, .new{
     position: relative;
     overflow: hidden;
     border-radius: .8rem;
@@ -373,6 +377,21 @@ font-size: 1.1rem;
     padding: .6rem 4rem;
     right: -4rem;
     top: 1.5rem;
+    transform: rotate(45deg);
+
+}
+.new::before{
+    content: 'New';
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+   
+    position: absolute;
+    z-index: 2;
+    background-color: rgb(68, 68, 236);
+    padding: .6rem 8rem;
+    right: -7rem;
+    top: 1rem;
     transform: rotate(45deg);
 
 }
